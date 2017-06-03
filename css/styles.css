@@ -10,7 +10,7 @@ body {
 header {
   min-width: 100%;
   min-height: 63px;
-  background: #F89128;
+  background: #F68C1D;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,6 +60,19 @@ header {
       header div.menu button:hover {
         background: #5A5858;
         cursor: pointer; }
+  @media (max-width: 1290px) {
+    header button {
+      font-size: 0.8em;
+      width: 140px; } }
+  @media (max-width: 1100px) {
+    header button {
+      display: none; } }
+  @media (max-width: 815px) {
+    header div.logo img {
+      float: left;
+      margin-left: 4px; }
+    header div.menu {
+      display: none; } }
 
 main div.info1 {
   min-width: 100%;
@@ -178,6 +191,10 @@ main div.info2 {
       -webkit-transition: all 0.4s;
       transition: all 0.4s; }
 
+@media (max-width: 700px) {
+  main div.info2 img {
+    width: 70%; } }
+
 main.segundaParte {
   margin-top: 20px; }
   main.segundaParte div.slider {
@@ -232,6 +249,23 @@ main.segundaParte {
           cursor: pointer;
           -webkit-transition: all 0.4s;
           transition: all 0.4s; }
+  @media (max-width: 1150px) {
+    main.segundaParte div.slider {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      main.segundaParte div.slider img {
+        width: 60%;
+        height: 250px;
+        -ms-flex-item-align: center;
+            align-self: center;
+        margin: auto;
+        margin-top: 30px; }
+      main.segundaParte div.slider div.infoSlider {
+        -ms-flex-item-align: center;
+            align-self: center;
+        margin-bottom: 30px; } }
   main.segundaParte div.info3 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -283,6 +317,12 @@ main.segundaParte {
         cursor: pointer;
         -webkit-transition: all 0.4s;
         transition: all 0.4s; }
+    @media (max-width: 920px) {
+      main.segundaParte div.info3 div.caracteristicas {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
   main.segundaParte div.info4 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -340,6 +380,12 @@ main.segundaParte {
         font-size: 1.4em; }
       main.segundaParte div.info4 div.examples div.exp2 .primero, main.segundaParte div.info4 div.examples div.exp3 .primero {
         margin-top: 5px; }
+    @media (max-width: 1020px) {
+      main.segundaParte div.info4 div.examples {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
   main.segundaParte div.info5 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -388,6 +434,9 @@ main.segundaParte {
           align-self: center;
       margin-left: 14px;
       margin-bottom: 10px; }
+    @media (max-width: 700px) {
+      main.segundaParte div.info5 img {
+        width: 50%; } }
 
 footer {
   min-width: 100%;
@@ -400,8 +449,13 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row; }
+  @media (max-width: 1150px) {
+    footer {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   footer div.enlaces {
-    width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -421,6 +475,102 @@ footer {
         color: white;
         font-weight: bold;
         font-size: 1.4em; }
+        footer div.enlaces div.enlaces1 a:hover, footer div.enlaces div.enlaces2 a:hover, footer div.enlaces div.enlaces3 a:hover, footer div.enlaces div.enlaces4 a:hover {
+          opacity: 0.7; }
     footer div.enlaces div.enlaces1 .primeroF, footer div.enlaces div.enlaces2 .primeroF, footer div.enlaces div.enlaces3 .primeroF, footer div.enlaces div.enlaces4 .primeroF {
       margin-bottom: 28px;
       font-size: 2.1em; }
+      footer div.enlaces div.enlaces1 .primeroF:hover, footer div.enlaces div.enlaces2 .primeroF:hover, footer div.enlaces div.enlaces3 .primeroF:hover, footer div.enlaces div.enlaces4 .primeroF:hover {
+        cursor: default;
+        opacity: 1; }
+  footer div.redesInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
+    margin-left: 55px; }
+    footer div.redesInfo div.redes {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-top: 20px;
+      border-bottom: 1px solid white;
+      width: 80%; }
+      footer div.redesInfo div.redes div.icoRedes {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        color: white;
+        margin-right: 25px;
+        margin-bottom: 50px; }
+        footer div.redesInfo div.redes div.icoRedes i {
+          margin-right: 15px;
+          font-size: 1.5em;
+          padding-right: 20px; }
+          footer div.redesInfo div.redes div.icoRedes i:nth-child(1):hover {
+            color: #0D779A;
+            cursor: pointer; }
+          footer div.redesInfo div.redes div.icoRedes i:nth-child(2):hover {
+            cursor: pointer;
+            color: #0DA9DC; }
+          footer div.redesInfo div.redes div.icoRedes i:nth-child(3):hover {
+            cursor: pointer;
+            color: #D64119; }
+          footer div.redesInfo div.redes div.icoRedes i:nth-child(4):hover {
+            cursor: pointer;
+            color: #0B71B8; }
+      footer div.redesInfo div.redes span {
+        font-size: 1.7em;
+        color: white;
+        margin-right: 150px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        footer div.redesInfo div.redes span i {
+          padding-right: 10px; }
+        footer div.redesInfo div.redes span:hover {
+          opacity: 0.7;
+          cursor: pointer; }
+    footer div.redesInfo div.app {
+      margin-top: 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-right: 80px;
+      border-bottom: 1px solid white;
+      width: 80%; }
+      footer div.redesInfo div.app img {
+        width: 150px;
+        height: 60px;
+        margin-right: 20px;
+        margin-bottom: 30px; }
+    footer div.redesInfo div.contacto {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      color: white;
+      font-weight: bold; }
+      footer div.redesInfo div.contacto .tel {
+        font-size: 1.4em; }
+  @media (max-width: 1100px) {
+    footer div.app img {
+      width: 100px;
+      height: 35; } }
